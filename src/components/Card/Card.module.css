@@ -1,0 +1,60 @@
+/* body {
+    margin: 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    background-color: #202020;
+  }
+  
+ 
+  
+  .card {
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+  }
+  
+  .card-wrap {
+    margin: 0 auto;
+    height: 300px;
+    width: 200px;
+    background-color: rgb(94, 93, 93);
+    border: 2px solid #0a2e01;
+    border-radius: 10px;
+    display: grid;
+    grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .card_album {
+    font-size: 13px;
+    margin: 5px 30px;
+  }
+  
+  .card_artist {
+    font-size: 12px;
+    margin: 5px 0px;
+    font-weight: normal;
+    color: #ffffff;
+  }
+  
+  .card_button {
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #000000;
+    box-shadow: 1px 2px rgb(119, 119, 119);
+  }
+  
+  .card_button:active {
+    box-shadow: none;
+    top: 2px;
+  }
+  
+  .card_content {
+    height: 60px;
+    width: auto;
+  }
+  
+  
+   */

@@ -1,0 +1,14 @@
+
+.search-btn{
+  color: wheat;
+  background-color: darkgreen;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+.form_inputSearch{
+  border-radius: 20px;
+  width: 400px;
+  margin: 100px auto;
+}
+

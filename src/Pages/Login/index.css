@@ -1,0 +1,27 @@
+.auth-link {
+    margin: 190px 50px 50px 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.auth{
+    text-decoration: none;
+    color: white;
+}
+
+.login-btn {
+    cursor: pointer;
+    margin-top: 5px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 35px;
+    width: 35%;
+    background-color: #002e0a;
+    padding: 20px;
+}
+
+h4{
+    color: black;
+}
+  
+  

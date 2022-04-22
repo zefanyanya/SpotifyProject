@@ -1,0 +1,37 @@
+.title{
+    color: aliceblue;
+}
+
+.create-btn{
+    margin-bottom: 30px;
+    margin-left: 80px ;
+    color: white;
+    background-color: darkgreen;
+}
+
+.create-form{
+    background-color: rgb(63, 63, 63);
+    margin: 100px auto;
+    width: 800px;
+    padding: 10px;
+    border-radius: 20px;
+    border:3px solid darkgreen;
+}
+
+.label{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.top-wraper{
+    align-items: center;
+}
+
+.isian{
+    margin: 5px auto;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+}
