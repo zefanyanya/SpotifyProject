@@ -2,26 +2,44 @@
     margin: 190px 50px 50px 50px;
     font-size: 50px;
     text-align: center;
-}
-
-.auth{
+    }
+    
+    .auth{
     text-decoration: none;
+    color: rgb(255, 255, 255);
+    }
+    
+    .head{
+    color: rgb(197, 197, 197);
+    }
+    
+    .login{
+    color: rgb(202, 202, 202);
+    }
+    
+    .order{
     color: white;
-}
-
-.login-btn {
+    }
+    
+    .login-btn {
     cursor: pointer;
-    margin-top: 5px;
+    margin-top: 300px;
     text-decoration: none;
     border-radius: 25px;
     font-size: 35px;
     width: 35%;
-    background-color: #002e0a;
-    padding: 20px;
-}
-
-h4{
+    background-color: #00420e;
+    padding: 30px;
+    transition-duration: 1s;
+    cursor: pointer;
+    }
+    
+    
+    .login-btn:hover {
+    background-color: #000000;
+    color: white;
+    }
+    
+    h4{
     color: black;
-}
-  
-  
+    }

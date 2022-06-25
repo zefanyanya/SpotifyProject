@@ -1,11 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./index.css";
 import config from "../../lib/config";
 import { useDispatch } from "react-redux";
 import { login } from "../../reducer/authReducer";
 import { useHistory } from "react-router-dom";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import moon2 from "../../lib/img/moon.jpg";
+import earth from "../../lib/img/earth5000.jpg";
+import smoke from "../../lib/img/smoke.jpg";
 
 const Login = () => {
+  const ref = useRef();
   const dispatch = useDispatch();
 
   const history = useHistory();
@@ -53,14 +58,64 @@ const Login = () => {
   };
 
   return (
-    <div className="auth-link">
-      <h3>Login to explore your music world!</h3>
-      <button className="login-btn">
-        <a className="auth" href={getLinkAuth()}>
-          Login
-        </a>
-      </button>
-    </div>
+    <Parallax pages={4} ref={ref}>
+      <div className="auth-link">
+        <ParallaxLayer
+          offset={0}
+          speed={1}
+          factor={2}
+          style={{
+            backgroundImage: `url(${moon2})`,
+            backgroundSize: "cover",
+          }}
+        />
+
+        <ParallaxLayer speed={5}></ParallaxLayer>
+
+        <ParallaxLayer
+          offset={1}
+          speed={0.5}
+          factor={2}
+          style={{
+            backgroundImage: `url(${smoke})`,
+            backgroundSize: "cover",
+          }}
+        >
+          <h2 className="login">Login to explore your music world!</h2>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={2}
+          speed={1}
+          factor={4}
+          style={{
+            backgroundImage: `url(${earth})`,
+            backgroundSize: "cover",
+          }}
+        ></ParallaxLayer>
+
+        <ParallaxLayer
+          sticky={{ start: 0.4, end: 0.2 }}
+          style={{ textAlign: "center" }}
+        >
+          <h2 className="head">Welcome to create playlist web Gigih</h2>
+          <br></br>
+          <p className="order">↓</p>
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={3}
+          speed={0.5}
+          onClick={() => ref.current.scrollTo(1)}
+        >
+          <button className="login-btn">
+            <a className="auth" href={getLinkAuth()}>
+              Login
+            </a>
+          </button>
+        </ParallaxLayer>
+      </div>
+    </Parallax>
   );
 };
 export default Login;
