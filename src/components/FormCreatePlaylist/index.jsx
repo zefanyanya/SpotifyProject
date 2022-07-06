@@ -70,7 +70,7 @@ const FormCreatePlaylist = ({ uris }) => {
 
   return (
     <div className="top-wraper">
-      <form className="create-form" onSubmit={handleSubmit}>
+      <form className="create-form" style="width: 500px" onSubmit={handleSubmit}>
         <h1 className="label">Create Playlist</h1> <br />
         <div className="isian">
           <input

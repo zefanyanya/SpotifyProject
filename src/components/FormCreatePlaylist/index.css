@@ -18,6 +18,15 @@
     border:3px solid darkgreen;
 }
 
+@media (max-width: 893.5px) {
+    .create-form {
+      width: 500px ;
+    }
+  }
+  
+  
+
+
 .label{
     align-items: center;
     justify-content: center;

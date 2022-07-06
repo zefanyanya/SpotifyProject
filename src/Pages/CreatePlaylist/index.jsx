@@ -5,6 +5,7 @@ import Card from "../../components/Card";
 import { useState } from "react";
 import DarkMode from "../../components/Darkmode";
 import Head from "../../components/Head";
+import Navbar from "../../components/Nav";
 
 const CreatePlayList = () => {
   const [tracks, setTracks] = useState([]);
@@ -35,6 +36,7 @@ const CreatePlayList = () => {
 
   return (
     <div className="home">
+      <Navbar />
       <div className="darkmode">
         <DarkMode />
       </div>
